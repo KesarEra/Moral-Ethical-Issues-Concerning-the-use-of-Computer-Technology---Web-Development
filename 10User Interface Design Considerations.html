@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <title>User Interface Design Considerations</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    	<div class="container">
+	        <aside>
+	            <figure>
+	                <div id="avatar">
+	                	<img src="Images/Some.png">
+	                </div>
+	                <figcaption>The World of Computer Technology</figcaption>
+	            </figure>
+	            <img src="Images/menu.svg" class="menu">
+	            <nav>
+	                <ul>
+	                    <li><a href="index.html">Home</a></li>
+	                    <li><a href="2Computers in Workforce.html">Computers in Workforce</a></li>
+	                    <li><a href="3Automated Decision Making.html">Automated Decision Making</a></li>
+	                    <li><a href="4Artificial Intelligence.html">Artificial Intelligence</a></li>
+	                    <li><a href="5Environmental Effects.html">Environmental Effects</a></li>
+	                    <li><a href="6Censorship & the Internet.html">Censorship & the Internet</a></li>
+	                    <li><a href="7Monitoring Behaviour.html">Monitoring Behaviour</a></li>
+	                    <li><a href="8Analysis of Personal Information.html">Analysis of Personal Information</a></li>
+	                    <li><a href="9Piracy & Offensive Communications.html">Piracy & Offensive Communications</a></li>
+	                    <li><a href="10User Interface Design Considerations.html">User Interface Design Considerations</a></li>
+	                    <li><a href="11Feedback Form.html">Feedback Form</a></li>
+	                </ul>
+	            </nav>
+	        </aside>
+	        <main>
+	            <h1>User Interface Design Considerations</h1>
+	            <p>The internet had a global audience so layout, colour paradigms and character sets should be considered carefully as they are all affected by cultural expectations and traditions. Most western website are laid out to suit a western audience, where material is displayed top to bottom, left to right. However, this layout is not appropriate for everyone because countries where the main written language is different, the text could be structured differently. And thus, the position of key items on a web page, such as logos, menus and login buttons, might be better located elsewhere. Colour is another major issue to consider as colours mean many different things to different people and across cultures. Colour interpretation are all personal but on the cultural level colours can have a much more serious implication. Thus, great care must be taken, especially when constructing web content for international consumption. Also, there are many different character sets, so consideration must be taken when choosing a character set depending on the intended audience for the digital content.</p>
+	            <h2>Examples of user interface design considerations:</h2>
+	            <div class="examples">
+		            <ul>
+		            	<li>In Arabic text is read and written from right to left so when approaching Arabic speakers, websites need to alter their layout to suit the viewers.</li>
+		            	<li>World maps are a great example of layout. Some maps place Europe in the centre but there is no centre to a 2D representation of a sphere.</li>
+		            	<li>The colour red is much more contentious colour. On one hand it is associated with love and care, but it can be easily associated with negative feelings, censorship and danger.</li>
+		            </ul>
+	        	</div>
+	        	<h2>Opportunities and risks when considering user interface design:</h2>
+	        	<div  class="or">
+	        		<div class="tables">
+	        			<h3>Opportunities:</h3>
+	        			<div class="examples">
+		        			<ul>
+				            	<li>Designing website for global audiences can allow companies to increase their profits.</li>
+			            		<li>The viewing experience can be made more natural for the global audience by carefully designing layout and colours.</li>
+				            </ul>
+			        	</div>
+	        		</div>
+	        		<div class="tables">
+	        			<h3>Risks:</h3>
+	        			<div class="examples">
+		        			<ul>
+				            	<li>The ASCII code provides enough characters for only western alphabets and symbols by using 8 bits. However, 16-bit Unicode needs to be used to represent other languages and symbols to represent other languages such as Chinese.</li>
+			            		<li>Colours can easily offend or portray an unintended meaning to users.</li>
+				            </ul>
+			        	</div>
+	        		</div>
+	        	</div>
+	        	<img src="Images/Layout.png" class="Images" alt="Layout">
+	        </main>
+		</div>
+        <footer>
+            <p>Copyright &copy; 2020 KV</p>
+        </footer>
+
+        <script>
+        	(function() {
+                var menu = document.querySelector('ul'),
+                    menulink = document.querySelector('.menu');
+                
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+            })();
+        </script>
+    </body>
+</html>
